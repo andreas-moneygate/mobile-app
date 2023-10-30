@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "ES2020",
+    "moduleResolution": "Node",
+    "jsx": "react-native",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "composite": true,
+    "noEmit": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*"],
+      "assets/*": ["src/assets/*"],
+      "constants/*": ["src/constants/*"],
+      "components/*": ["src/components/*"],
+      "config": ["src/config/index"],
+      "hooks": ["src/hooks/*"],
+      "routes/*": ["src/routes/*"],
+      "theme/*": ["src/theme/*"],
+      "utils/*": ["src/utils/*"],
+      "screens/*": ["src/screens/*"],
+      "state/*": ["src/state/*"],
+      "types/*": ["src/types/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
+  },
+  "extends": "expo/tsconfig.base"
+}

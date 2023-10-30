@@ -1,0 +1,44 @@
+{
+  "cli": {
+    "version": ">= 2.6.0"
+  },
+  "build": {
+    "simulator": {
+      "env": {
+        "INSTANCE": "dev"
+      },
+      "ios": {
+        "simulator": true
+      }
+    },
+    "development": {
+      "autoIncrement": true,
+      "env": {
+        "INSTANCE": "dev"
+      },
+      "android": {
+        "distribution": "internal",
+        "buildType": "apk"
+      }
+    },
+    "preview": {
+      "autoIncrement": true,
+      "env": {
+        "INSTANCE": "prod"
+      },
+      "android": {
+        "distribution": "internal",
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "INSTANCE": "prod"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
